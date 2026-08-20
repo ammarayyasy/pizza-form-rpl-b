@@ -5,110 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ammar's Pizza</title>
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Form Ammar's Pizza</h1>
-        <p><i>Pizza lezat cepat sampai ke rumah anda ~ 🍕</i></p>
-
-        <nav>
-            <a href="#menu">Lihat Menu</a> |
-            <a href="#order">Pesan Sekarang</a> |
-            <a href="#kontak">Kontak Kami</a>
-        </nav>
-        <hr>
-    </header>
-
-    <!-- Section: Promo -->
-    <section>
-        <h3>Promo hari ini!!</h3>
-        <img src="images/promo.jpg" alt="promo pizza" width="350">
-        <p><mark>Diskon 30%</mark>  untuk semua pizza berukuran besar!!</p>
-
-        <ul>
-            <li>Rotinya empuk.</li>
-            <li>Harga nya murah.</li>
-            <li>Rempahnya berasa.</li>
-        </ul>
-    </section>
-
-    <!-- Section: Menu -->
-    <section id="menu">
-        <h3>Menu kami</h3>
-        <table border="1">
-            <tr>
-                <th>Nama</th>
-                <th>Ukuran</th>
-                <th>Harga</th>
-            </tr>
-            <tr>
-                <td>Pizza Macaroni</td>
-                <td>Large</td>
-                <td>Rp 90.000</td>
-            </tr>
-            <tr>
-                <td>Pizza Pepperoni</td>
-                <td>Medium</td>
-                <td>Rp 87.000</td>
-            </tr>
-            <tr>
-                <td>Pizza Mushroom Mozarella</td>
-                <td>Large</td>
-                <td>Rp 120.000</td>
-            </tr>
-        </table>
-    </section>
-
-    <!-- Section: Order Form -->
-    <section id="order">
-        <h3>Pesan disini:</h3>
-        <form action="https://formspree.io/f/xoeaaojg" method="POST">
-            <label for="pemesan">Nama anda:</label><br>
-            <input type="text" id="pemesan" name="pemesan"><br><br>
-
-            <label for="email">Email anda:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-
-            <label for="ukuran">Ukuran pizza:</label><br>
-            <select id="ukuran" name="ukuran">
-                <option value="">Pilih size pizza</option>
-                <option value="Small">Small</option>
-                <option value="Medium">Medium</option>
-                <option value="Large">Large</option>
-            </select><br><br>
-
-            <label for="toping">Pilih Topping:</label>
-            <br><input type="checkbox" id="toping" name="toping" value="Jamur"> Jamur
-            <br><input type="checkbox" id="toping" name="toping" value="Sosis"> Sosis
-            <br><input type="checkbox" id="toping" name="toping" value="Keju"> Keju <br><br>
-
-            <label for="">Pilih jenis saus: </label>
-            <br><input type="radio" name="saus" value="Saus BBQ"> Saus BBQ
-            <br><input type="radio" name="saus" value="Saus Pedas"> Saus Pedas
-            <br><input type="radio" name="saus" value="Suas Salsa"> Saus Salsa <br><br>
-
-            <label for="">Catatan:</label>
-            <br><textarea name="Catatan" id="" cols="45" rows="6"></textarea>
-
-            <br><br><button type="submit">Pesan Sekarang</button>
-
-        </form>
-    </section>
-
-    <!-- Section: Contact -->
-    <section id="kontak">
-        <h3>Kontak Kami</h3>
-        <p>📍 Jl. Sukamakmur, Kab. Jonggol, Jawa Barat</p>
-        <p>📞 <a target="_blank" href="https://wa.me/6281399808859?text=Halo%20Saya%20Mau%20Pesan%20Pizza">+62 813-9980-8859</a></p>
-        <p>✉️ <a target="_blank" href="mailto:ammarpizza@gmail.com">ammarpizza@gmail.com</a></p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <hr>
-        <p> &copy; Ammar's Pizza 2026. Reserved. All right reserved.</p>
-    </footer>
-
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1 class="judul">Form Ammar's Pizza</h1>
+            <p><i>Pizza lezat cepat sampai ke rumah anda ~ 🍕</i></p>
+    
+            <nav>
+                <a href="#menu">Lihat Menu</a> |
+                <a href="#order">Pesan Sekarang</a> |
+                <a href="#kontak">Kontak Kami</a>
+            </nav>
+            <hr>
+        </header>
+    
+        <!-- Section: Promo -->
+        <section>
+            <h3 class="judul">Promo hari ini!!</h3>
+            <img src="images/promo.jpg" alt="promo pizza" width="350">
+            <p><mark>Diskon 30%</mark>  untuk semua pizza berukuran besar!!</p>
+    
+            <ol>
+                <li>Rotinya empuk.</li>
+                <li>Harga nya murah.</li>
+                <li>Rempahnya berasa.</li>
+            </ol>
+        </section>
+    
+        <!-- Section: Menu -->
+        <section id="menu">
+            <h3 class="judul">Menu kami</h3>
+            <table border="1">
+                <tr>
+                    <th>Nama</th>
+                    <th>Ukuran</th>
+                    <th>Harga</th>
+                </tr>
+                <tr>
+                    <td>Pizza Macaroni</td>
+                    <td>Large</td>
+                    <td>Rp 90.000</td>
+                </tr>
+                <tr>
+                    <td>Pizza Pepperoni</td>
+                    <td>Medium</td>
+                    <td>Rp 87.000</td>
+                </tr>
+                <tr>
+                    <td>Pizza Mushroom Mozarella</td>
+                    <td>Large</td>
+                    <td>Rp 120.000</td>
+                </tr>
+            </table>
+        </section>
+    
+        <!-- Section: Order Form -->
+        <section id="order">
+            <h3 class="judul">Pesan disini:</h3>
+            <form action="https://formspree.io/f/xoeaaojg" method="POST">
+                <label for="pemesan">Nama anda:</label><br>
+                <input type="text" id="pemesan" name="pemesan"><br><br>
+    
+                <label for="email">Email anda:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+    
+                <label for="ukuran">Ukuran pizza:</label><br>
+                <select id="ukuran" name="ukuran">
+                    <option value="">Pilih size pizza</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select><br><br>
+    
+                <label for="toping">Pilih Topping:</label>
+                <br><input type="checkbox" id="toping" name="toping" value="Jamur"> Jamur
+                <br><input type="checkbox" id="toping" name="toping" value="Sosis"> Sosis
+                <br><input type="checkbox" id="toping" name="toping" value="Keju"> Keju <br><br>
+    
+                <label for="">Pilih jenis saus: </label>
+                <br><input type="radio" name="saus" value="Saus BBQ"> Saus BBQ
+                <br><input type="radio" name="saus" value="Saus Pedas"> Saus Pedas
+                <br><input type="radio" name="saus" value="Suas Salsa"> Saus Salsa <br><br>
+    
+                <label for="">Catatan:</label>
+                <br><textarea name="Catatan" id="" rows="7"></textarea>
+    
+                <br><br><button type="submit">Pesan Sekarang</button>
+    
+            </form>
+        </section>
+    
+        <!-- Section: Contact -->
+        <section id="kontak">
+            <h3 class="judul">Kontak Kami</h3>
+            <p>📍 Jl. Sukamakmur, Kab. Jonggol, Jawa Barat</p>
+            <p>📞 <a target="_blank" href="https://wa.me/6281399808859?text=Halo%20Saya%20Mau%20Pesan%20Pizza">+62 813-9980-8859</a></p>
+            <p>✉️ <a target="_blank" href="mailto:ammarpizza@gmail.com">ammarpizza@gmail.com</a></p>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <hr>
+            <p> &copy; Ammar's Pizza 2026. Reserved. All right reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
